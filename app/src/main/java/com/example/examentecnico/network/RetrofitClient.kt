@@ -1,7 +1,6 @@
 package com.example.examentecnico.network
 
 import com.example.examentecnico.core.Constantes
-import com.example.examentecnico.core.constantes
 import com.google.gson.GsonBuilder
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory

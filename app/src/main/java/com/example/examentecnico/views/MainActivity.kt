@@ -1,15 +1,13 @@
 package com.example.examentecnico.views
 
-import android.app.Activity
-import android.os.Binder
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.RecyclerView.LayoutManager
+import androidx.lifecycle.lifecycleScope
+import androidx.room.Room
 import com.example.examentecnico.R
 import com.example.examentecnico.viewmodels.PeliculasViewModel
+import kotlinx.coroutines.launch
 
 class MainActivity : AppCompatActivity(){
 
@@ -39,6 +37,13 @@ class MainActivity : AppCompatActivity(){
             cambiarColorBotom("pop")
         }
         viewModel.obtenerCartelera()
+
+
+        val room = Room.databaseBuilder(this, DBPruebas::class.java, "usuario").build()
+
+        lifecycleScope.launch {
+
+        }
     }
     private fun cambiarColorBotom(boton: String){
         when(boton) {

@@ -65,7 +65,7 @@ dependencies {
     implementation("com.github.User:Repo:Version")
 
     //Room
-    implementation("androidx.room:room-ktx:2.4.2")
+    implementation("androidx.room:room-ktx:2.4.3")
     implementation("com.android.support:support-annotations:28.0.0")
     kapt("androidx.room:room-compiler:2.4.2")
 
